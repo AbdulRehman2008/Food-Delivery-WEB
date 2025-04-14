@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<body>
+
+    <nav>
+        <div class="navbar" id="sidebar">
+            <div class="links">
+                <li onclick=hidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#ffff">
+                            <path
+                                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                        </svg></a></li>
+                <li><a href="index.html" class="test">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </div>
+            <button class="btn">Register Restaurant</button>
+        </div>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="./imgs/logo2.png" alt="Logo">
+            </div>
+            <div class="links">
+                <li class="mobile-hide"><span>FOOD ORDERING</span><a href="index.html" class="test">HOME</a>
+                    <div class="drop-down">
+                        <a href="index.html" class="Drop-item drop-b" style="font-size: 14px;">HOME 1</a>
+                        <a href="index.html" class="Drop-item" style="font-size: 14px;">HOME 2</a>
+                    </div>
+                </li>
+                <li class="mobile-hide"><span>FOOD ORDERING</span><a href="menu.html">MENU</a>
+                    <div class="drop-down">
+                        <a href="menu.html" class="Drop-item drop-b" style="font-size: 14px;">Menu 1</a>
+                        <a href="menu.html" class="Drop-item drop-b" style="font-size: 14px;">Menu 2</a>
+                        <a href="menu.html" class="Drop-item drop-b" style="font-size: 14px;">Our Menu</a>
+                        <a href="menu.html" class="Drop-item" style="font-size: 14px;">Food Details</a>
+                    </div>
+                </li>
+                <li class="mobile-hide"><span>FOOD ORDERING</span><a href="about.html">About Us</a>
+                    <div class="drop-down">
+                        <a href="about.html" class="Drop-item drop-b" style="font-size: 14px;">Special Pages</a>
+                        <a href="about.html" class="Drop-item drop-b" style="font-size: 14px;">Gallery</a>
+                        <a href="about.html" class="Drop-item drop-b" style="font-size: 14px;">About us</a>
+                        <a href="about.html" class="Drop-item" style="font-size: 14px;">User Profiles</a>
+                    </div>
+                </li>
+                <li class="mobile-hide"><span>FOOD ORDERING</span><a href="contact.html">CONTACT US</a></li>
+                <li class="menu-toggle" onclick=showbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#000000">
+                            <path
+                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                        </svg></a></li>
+            </div>
+            <button class="btn mobile-hide">Register Restaurant</button>
+            <div class="cart">
+                <a href="index2.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg></a>
+                <div class="cart-item">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navsec">
+            <h2>Order <span> Food Online From</span> the Best Restaurants</h2>
+            <div class="forms">
+                <input type="text" placeholder="ENTER YOUR RESTAURANT">
+                <input type="text" placeholder="ENTER YOUR LOCATION">
+                <button class="btn">SEARCH</button>
+            </div>
+            <div class="icons">
+                <img src="./imgs/fact-icon1.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-right">
+                    <h2>137</h2>
+                    <p>
+                        RESTAURANTS
+
+                    </p>
+                </div>
+                <img src="./imgs/fact-icon2.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-right">
+                    <h2>137</h2>
+                    <p>
+                        RESTAURANTS
+
+                    </p>
+                </div data-aos="fade-right">
+                <img src="./imgs/fact-icon3.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-right">
+                    <h2>137</h2>
+                    <p>
+                        RESTAURANTS
+
+                    </p>
+                </div>
+                <img src="./imgs/fact-icon4.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-right">
+                    <h2>137</h2>
+                    <p>
+                        RESTAURANTS
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <section>
+        <div class="section1">
+            <h3>Website for Restaurant and Cafe</h3>
+            <h1>TOP RESTAURANT</h1>
+            <p>Things that get tricky are things like burgers and fries, or things that are deep-fried. We do have a
+                couple of burger restaurants that are capable of doing a good job transporting but it's Fries are almost
+                impossible.</p>
+            <div class="icon1" data-aos="fade-up">
+                <img src="./imgs/top-restaurant1.png" alt="">
+                <img src="./imgs/top-restaurant2.png" alt="">
+                <img src="./imgs/top-restaurant3.png" alt="">
+                <img src="./imgs/top-restaurant4.png" alt="">
+                <img src="./imgs/top-restaurant5.png" alt="">
+                <img src="./imgs/top-restaurant6.png" alt="">
+            </div>
+        </div>
+        <div class="section_2">
+            <h3>Your Favourite Food</h3>
+            <h1>Choose & Enjoy</h1>
+            <div class="container">
+                <div class="box" data-aos="fade-right"><img src="./imgs/popular-dish-img1.jpg" alt="">
+                    <h1>Maenaam Thai Restaurant</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <h3>$85.00</h3><button class="btn">ORDER NOW</button>
+                </div>
+                <div class="box" data-aos="fade-up"><img src="./imgs/popular-dish-img2.jpg" alt="">
+                    <h1>Champignon somen Noodles</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <h3>$85.00</h3><button class="btn">ORDER NOW</button>
+                </div>
+                <div class="box" data-aos="fade-left"><img src="./imgs/popular-dish-img3.jpg" alt="">
+                    <h1>Tomatoes & Clams Pasta</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <h3>$85.00</h3><button class="btn">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="section_3">
+            <h3>Your Favourite Food</h3>
+            <h1>Popular This Month</h1>
+            <div class="main-box">
+                <div class="left-box" data-aos="fade-left">
+                    <div class="dic">
+                        <img src="./imgs/dish-caro1.jpg" alt="">
+
+                    </div>
+                    <div class="rest-details" data-aos="fade-left">
+                        <img src="./imgs/restaurant-logo3.png" alt="">
+                        <h4>Central Caffe Pizzeria</h4>
+                    </div>
+                    <div class="rest-p" data-aos="fade-left">
+
+                        <p>5th Avenue New York 68</p>
+                    </div>
+                    <div class="Dish" data-aos="fade-right">
+                        <h2>Korean Bibimbap Yamyam</h2>
+                        <p>$10.00-$30.00</p>
+                    </div>
+                </div>
+                <div class="right-box" data-aos="fade-right">
+                    <div class="main-text">
+
+                        <div class="dish-1" data-aos="fade-right"><img src="./imgs/round-pic1.jpg" alt="">
+                            <div class="link-test">
+
+                                <p>$10.00-$30.00</p>
+                                <div class="links-t">
+
+                                    <a href="">Tequila & Lime hake</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dish-2" data-aos="fade-left">
+                            <img src="./imgs/restaurant-logo1.png" alt="">
+                            <div class="link-test">
+
+                                <h2>Jagnetina Na Raznju</h2>
+                                <div class="links-t">
+
+                                    <p>68 5th Avenue New York</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-1"><img src="./imgs/round-pic2.jpg" alt="">
+                            <div class="link-test">
+
+                                <p>$10.00-$30.00</p>
+                                <div class="links-t">
+
+                                    <a href="">Maximus nibh facilisis</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dish-2">
+                            <img src="./imgs/restaurant-logo2.png" alt="">
+                            <div class="link-test">
+
+                                <h2>Central Caffe Pizzeria</h2>
+                                <div class="links-t">
+
+                                    <p>68 5th Avenue New York</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-1"><img src="./imgs/round-pic3.jpg" alt="">
+                            <div class="link-test">
+
+                                <p>$10.00-$30.00</p>
+                                <div class="links-t">
+
+                                    <a href="">Hendrerit nisi venenatis</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dish-2">
+                            <img src="./imgs/restaurant-logo3.png" alt="">
+                            <div class="link-test">
+
+                                <h2>Dream Food By Opaq</h2>
+                                <div class="links-t">
+
+                                    <p>68 5th Avenue New York</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-1"><img src="./imgs/round-pic4.jpg" alt="">
+                            <div class="link-test">
+
+                                <p>$10.00-$30.00</p>
+                                <div class="links-t">
+
+                                    <a href="">Grilled Shrimp Scampi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dish-2">
+                            <img src="./imgs/restaurant-logo4.png" alt="">
+                            <div class="link-test">
+
+                                <h2>Fabio Al Porto Ristorante</h2>
+                                <div class="links-t">
+
+                                    <p>68 5th Avenue New York</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_5">
+            <h3>Website for Restaurant and Cafe</h3>
+            <h1>easy order in 3 steps</h1>
+            <div class="order-step">
+                <div class="steps">
+                    <img src="./imgs/setp-img1.png" alt="">
+                    <h4>Explore Restaurants</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="steps">
+                    <img src="./imgs/setp-img2.png" alt="">
+                    <h4>Choose a Tasty Dish</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="steps">
+                    <img src="./imgs/setp-img3.png" alt="">
+                    <h4>Follow The Status</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+        </div>
+        <div class="section_4">
+            <h3>Your Favourite Food</h3>
+            <h1>CHOOSE YOUR FOOD</h1>
+            <div class="contain">
+                <div class="boxs" data-aos="fade-right"><img src="./imgs/most-popular-img1-1.png" alt="">
+                    <div class="menu">
+                        <span>5th Avenue New York 68</span>
+                        <h1>Domino's Pizza</h1>
+                        <p><span> Type of food:</span> Apple Juice, BB.Q, Beef Roast</p>
+                        <p>Min order $50 30min</p>
+                        <p> Accepts cash & online payments</p>
+                        <button class="btn">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="boxs" data-aos="fade-left"><img src="./imgs/most-popular-img1-2.png" alt="">
+                    <div class="menu">
+                        <span>5th Avenue New York 68</span>
+                        <h1>Burger King</h1>
+                        <p><span> Type of food:</span> Apple Juice, BB.Q, Beef Roast</p>
+                        <p>Min order $50 30min</p>
+                        <p> Accepts cash & online payments</p>
+                        <button class="btn">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="boxs" data-aos="fade-right"><img src="./imgs/most-popular-img1-3.png" alt="">
+                    <div class="menu">
+                        <span>5th Avenue New York 68</span>
+                        <h1>Wendy's Cafe</h1>
+                        <p><span> Type of food:</span> Apple Juice, BB.Q, Beef Roast</p>
+                        <p>Min order $50 30min</p>
+                        <p> Accepts cash & online payments</p>
+                        <button class="btn">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="boxs" data-aos="fade-left"><img src="./imgs/most-popular-img1-4.png" alt="">
+                    <div class="menu">
+                        <span>5th Avenue New York 68</span>
+                        <h1>Restaurant</h1>
+                        <p><span> Type of food:</span> Apple Juice, BB.Q, Beef Roast</p>
+                        <p>Min order $50 30min</p>
+                        <p> Accepts cash & online payments</p>
+                        <button class="btn">ORDER NOW</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </section>
+    <footer>
+        <div class="main-logo">
+            <img src="./imgs/logo.png" alt="">
+            <p>Lorem ipsum culpa tempor tempor eu laboris adipisicing sunt excepteur enim laborum officia eiusmod
+                laborum sint do aliqua incididunt est aute deserunt in elit non sed ut velit ullamco aliquip. Nulla
+                cupidatat elit amet sed labore ut et consequat nostrud laboris aliqua ex est fugiat quis aliqua duis
+                quis esse dolor laboris non duis sunt.</p>
+        </div>
+        <div class="Games-s">
+            <h3>Menu Lists</h3>
+            <p>Thunder and City</p>
+            <p>Mystic Racing Z</p>
+            <p>Silent Wrath</p>
+            <p>Funk Dungeon</p>
+            <p>Galactic Oddsey</p>
+            <p>Warfare Legend</p>
+        </div>
+        <div class="footer-page">
+            <h3>Blog Page</h3>
+            <p>Game Server</p>
+            <p>Knowledgebase</p>
+            <p>About Us</p>
+            <p>Affliates</p>
+            <p>Locations</p>
+            <p>News</p>
+
+        </div>
+        <div class="news-footer">
+            <h3>Newsletter</h3>
+            <input type="text" placeholder="Enter Your Email"><button type="button">$</button>
+            <h4>Follow Us on</h4>
+            <div class="icons-footer">
+                <ul class="example-2">
+                    <li class="icon-content">
+                        <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
+                            <div class="filled"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">LinkedIn</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                            <div class="filled"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">GitHub</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="https://www.instagram.com/" aria-label="Instagram" data-social="instagram">
+                            <div class="filled"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                            <div class="filled"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16" xml:space="preserve">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Youtube</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="test.js"></script>
+<script>
+
+    AOS.init();
+</script>
+
+</html>
