@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
-overflow-x: hidden;
 }
 
 
@@ -90,7 +89,7 @@ body {
 
 .drop-down {
     position: absolute;
-    top: 100px;
+    top: 80px;
     background-color: white;
     width: 150px;
     margin: 6px;
