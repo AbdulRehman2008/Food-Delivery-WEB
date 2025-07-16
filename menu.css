@@ -193,12 +193,15 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 height: 20dvh;
+margin-top: 20px;
 }
 .number{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 20px;
 }
 .number li{
     list-style: none;
