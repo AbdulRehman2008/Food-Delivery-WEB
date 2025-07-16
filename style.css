@@ -248,7 +248,6 @@ nav::before {
     width: 150px;
     margin: 6px;
     padding: 6px;
-    z-index: -1;
     transition: 0.8s ease-in-out;
     display: flex;
     flex-direction: column;
