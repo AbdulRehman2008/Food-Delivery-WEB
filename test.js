@@ -1,7 +1,7 @@
 function showbar() {
     const sidebar = document.getElementById("sidebar");
     sidebar.style.display = "flex";
-    document.body.style.overflow = "hidden"; // Prevent scrolling when sidebar is open
+    document.body.style.overflow = "hidden"; 
 }
 
 function hidebar() {

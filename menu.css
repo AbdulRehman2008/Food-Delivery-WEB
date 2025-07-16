@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: "Poppins", serif;
 }
 :root{
@@ -16,6 +17,9 @@
 }
 body{
     overflow-x: hidden;
+}
+.navbar-toggle{
+    display: none;
 }
 .navbar {
     display: flex;
@@ -77,7 +81,7 @@ body{
 }
 .drop-down{
     position: absolute;
-    top: 80px;
+    top: 100px;
     background-color: white;
     width: 150px;
     margin: 6px;
@@ -536,135 +540,167 @@ position: relative;
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
-    .navbar {
-        padding: 1rem;
-        height: auto;
-    }
-    
-    .navbar li {
-        padding: 0.75rem;
-    }
-    
-    .logo-container {
-        max-width: 140px;
-    }
-    
-    .box {
-        width: 300px;
-        margin: 10px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .navbar {
+    .navbar{
         height: auto;
-        padding: 0.75rem 1rem;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        padding: 1rem;
     }
-    
-    .logo-container {
-        width: 40%;
-        order: 1;
-        margin: 0;
+    .navbar .links {
+        display: none;
     }
-    
-    .cart {
-        order: 2;
-        margin-left: auto;
-        margin-right: 10px;
+    .mobile-hide{
+        display: none;
     }
-    
-    .links {
-        order: 3;
-        width: 100%;
-        justify-content: flex-end;
-        margin-top: 0;
-        padding: 0;
+    .cart{
+        display: none;
     }
-    
-    .mobile-hide {
-        display: none !important;
+    #sidebar{
+        display: flex;
+        background-color: #0000007c;
+        height: 100%;
+width: 100%;
     }
-    
-    .menu-toggle {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5rem;
-    }
-    
-    .box {
-        width: 100%;
-        max-width: 350px;
-        margin: 10px auto;
-    }
-    
-    .number {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .number li {
-        margin: 5px;
-    }
-    
-    #sidebar {
-        width: 100%;
-        align-items: flex-start;
-        padding: 2rem 1.5rem;
-    }
-    
-    #sidebar .links {
-        width: 100%;
-        align-items: flex-start;
-        margin: 0;
-    }
-    
-    #sidebar li {
-        margin: 0;
-        padding: 0.75rem 0;
-        text-align: left;
-    }
-    
-    #sidebar li a {
-        text-align: left;
-        font-size: 1.2rem;
-        padding: 0.5rem 0;
-    }
-    
-    #sidebar button {
-        display: none !important;
-    }
-}
 
-@media screen and (max-width: 576px) {
-    .navbar {
-        padding: 0.5rem;
+    .navsec {
+        height: 100dvh;
+        font-size: 1.5rem;
     }
-    
-    .logo-container {
+    .navsec h2{
+        font-size: 2.5rem;
+        width: 80%;
+    }
+ #sidebar{
+        width: 80%;
+    }
+    .navbar-toggle{
+position: absolute;
+top: 30px;
+right: 40px;
+    }
+    .navbar-toggle{
+    display: block;
+list-style: none;
+}
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 8px;
+    }
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .main-logo img {
         width: 50%;
+        height: auto;
+        margin-left: 0;
     }
-    
-    .menu-toggle {
-        padding: 0.25rem;
+    .main-logo p {
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
     }
-    
-    .cart {
-        margin-right: 5px;
+    .Games-s{
+        display: none;
     }
-    
-    .box .btn {
-        margin-left: 20px;
-        width: calc(100% - 40px);
+    .footer-page{
+        display: none;
+    }
+    .news-footer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-footer input {
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+    }
+    .news-footer button {
+right: 20px;
     }
 }
+@media screen and (max-width: 1023px) {
+    .navbar{
+        height: auto;
+        padding: 1rem;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        background-color: #0000007c;
+        height: 100%;
+width: 100%;
+    }
 
-@media screen and (min-width: 769px) {
-    .menu-toggle {
-        display: none !important;
+    .navsec {
+        height: 100dvh;
+        font-size: 1.5rem;
+    }
+    .navsec h2{
+        font-size: 2.5rem;
+        width: 80%;
+    }
+ #sidebar{
+        width: 80%;
+    }
+    .navbar-toggle{
+position: absolute;
+top: 30px;
+right: 40px;
+    }
+    .navbar-toggle{
+    display: block;
+list-style: none;
+}
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 8px;
+    }
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .main-logo img {
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+    }
+    .main-logo p {
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .Games-s{
+        display: none;
+    }
+    .footer-page{
+        display: none;
+    }
+    .news-footer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-footer input {
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+    }
+    .news-footer button {
+right: 20px;
     }
 }

@@ -50,6 +50,28 @@
                 <p onchange="window.location.href='cart-count'">0</p>
             </div></div>
         </div>
+                <div class="navbar-toggle">
+       <li class="menu-toggle" onclick=showbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="white">
+                            <path
+                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                        </svg></a></li>
+
+        <div class="navbar" id="sidebar">
+            <div class="links">
+                <li onclick=hidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="white">
+                            <path
+                                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                        </svg></a></li>
+                <li><a href="index.html" class="test">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </div>
+            <button class="btn">Register Restaurant</button>
+        </div>
+</div>
 <div class="navsec">
     <h1>CART</h1>
     <p>YOUR CHOICE IS MATTERS</p>
@@ -157,6 +179,7 @@
 
 </body>
 <script src="cart.js"></script>
+<script src="test.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;

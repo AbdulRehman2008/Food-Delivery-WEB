@@ -129,7 +129,7 @@ section{
 }
 .drop-down{
     position: absolute;
-    top: 80px;
+    top: 100px;
     background-color: rgb(0, 0, 0);
     width: 150px;
     margin: 6px;
@@ -158,6 +158,47 @@ section{
 .navbar li:hover .Drop-item{
     display: block;
 }
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100dvh;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(255, 255, 255, 0.397);
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+#sidebar .links{
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar li{
+    padding: 1rem;
+    width: 100%;
+}
+#sidebar img{
+    margin: 1rem;
+}
+#sidebar li a{
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+#sidebar button{
+    width: 100px;
+    height: 40px;
+    font-size: 8px;
+    margin: 1rem;
+}
+
 footer{
     display: flex;
     height: 60vh;
@@ -417,3 +458,172 @@ position: relative;
     .example-2 .icon-content a[data-social="youtube"]~.tooltip {
         background-color: #ff0000;
     }
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        height: auto;
+        padding: 1rem;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        background-color: #0000007c;
+        height: 100%;
+width: 100%;
+    }
+.btn{
+    display: none;
+}
+    .navsec {
+        height: 100dvh;
+        font-size: 1.5rem;
+    }
+    .navsec h2{
+        font-size: 2.5rem;
+        width: 80%;
+    }
+ #sidebar{
+        width: 80%;
+    }
+    .navbar-toggle{
+position: absolute;
+top: 30px;
+right: 40px;
+    }
+    .navbar-toggle{
+    display: block;
+list-style: none;
+}
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 8px;
+    }
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .main-logo img {
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+    }
+    .main-logo p {
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .Games-s{
+        display: none;
+    }
+    .footer-page{
+        display: none;
+    }
+    .news-footer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-footer input {
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+    }
+    .news-footer button {
+right: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .navbar{
+        height: auto;
+        padding: 1rem;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        background-color: #0000007c;
+        height: 100%;
+width: 100%;
+    }
+.btn{
+    display: none;
+}
+    .navsec {
+        height: 100dvh;
+        font-size: 1.5rem;
+    }
+    .navsec h2{
+        font-size: 2.5rem;
+        width: 80%;
+    }
+ #sidebar{
+        width: 80%;
+    }
+    .navbar-toggle{
+position: absolute;
+top: 30px;
+right: 40px;
+    }
+    .navbar-toggle{
+    display: block;
+list-style: none;
+}
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 8px;
+    }
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .main-logo img {
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+    }
+    .main-logo p {
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .Games-s{
+        display: none;
+    }
+    .footer-page{
+        display: none;
+    }
+    .news-footer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-footer input {
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+    }
+    .news-footer button {
+right: 20px;
+    }
+}

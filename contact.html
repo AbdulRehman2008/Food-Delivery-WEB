@@ -10,20 +10,7 @@
 
 <body>
     <nav>
-        <div class="navbar" id="sidebar">
-            <div class="links">
-                <li onclick=hidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
-                            viewBox="0 -960 960 960" width="26px" fill="#ffff">
-                            <path
-                                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
-                        </svg></a></li>
-                <li><a href="index.html" class="test">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </div>
-            <button class="btn">Register Restaurant</button>
-        </div>
+    
         <div class="navbar">
             <div class="logo-container">
                 <img src="./imgs/logo2.png" alt="Logo">
@@ -52,11 +39,6 @@
                     </div>
                 </li>
                 <li class="mobile-hide"><span>FOOD ORDERING</span><a href="contact.html">CONTACT US</a></li>
-                <li class="menu-toggle" onclick=showbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
-                            viewBox="0 -960 960 960" width="26px" fill="#000000">
-                            <path
-                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                        </svg></a></li>
             </div>
             <button class="btn mobile-hide">Register Restaurant</button>
             <div class="cart">
@@ -71,6 +53,28 @@
                 </div>
             </div>
         </div>
+    <div class="navbar-toggle">
+       <li class="menu-toggle" onclick=showbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#000000">
+                            <path
+                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                        </svg></a></li>
+
+        <div class="navbar" id="sidebar">
+            <div class="links">
+                <li onclick=hidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#ffff">
+                            <path
+                                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                        </svg></a></li>
+                <li><a href="index.html" class="test">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </div>
+            <button class="btn">Register Restaurant</button>
+        </div>
+</div>    
         <div class="navsec">
             <h1>Contact Us</h1>
             <h3>A Greate Restaurant Website</h3>
