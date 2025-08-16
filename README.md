@@ -28,7 +28,7 @@ This project is a static, client-side food-ordering website template created usi
 
 ## Screenshots
 
-- Homepage  ![Home Screenshot]()
+- Homepage  ![Home Screenshot](Screenshot 2025-08-13 200435.png)
 
 
 ---
