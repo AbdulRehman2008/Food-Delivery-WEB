@@ -28,7 +28,7 @@ This project is a static, client-side food-ordering website template created usi
 
 ## Screenshots
 
-- Homepage  ![Home Screenshot](https://github.com/AbdulRehman2008/Food-Delivery-WEB/blob/main/Screenshot%202025-08-13%20200435.png)
+- Homepage  ![Home Screenshot](https://github.com/AbdulRehman2008/Food-Delivery-WEB/blob/main/Screenshot%202025-08-16%20015051.png)
 
 
 ---
